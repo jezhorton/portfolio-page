@@ -1,15 +1,115 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <link rel="stylesheet" href="styles.css">
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <header>
-      <h1>My portfolios Page</h1>
-      <h1 class="pink">Pink Writing</h1>
-    </header>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  </body>
+  <title>Jez Horton</title>
+
+  <!-- load CSS -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">    <!-- Google web font "Open Sans" -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">                                        
+  <link rel="stylesheet" href="css/styles.css">                                     
+
+</head>
+
+<body>
+
+
+ <div class="container">
+
+  <!-- 1st section -->
+  <section class="row tm-section">
+   <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0">
+    <div class="tm-flex-center p-5 tm-bg-color-primary tm-section-min-h">
+      <h1 class="tm-text-color-white tm-site-name">Jez Horton</h1>
+    </div>
+  </div>
+  <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+    <div class="tm-flex-center p-5">
+      <q class="tm-quote tm-text-color-gray">A wizard is never late; they arrive precisely when they intend too</q>
+    </div>
+  </div>
+</section>
+
+<!-- 2nd section -->
+<section class="row tm-section tm-col-md-reverse">
+ <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+  <div class="tm-flex-center p-5">
+    <div class="tm-md-flex-center">
+      <h2 class="tm-text-color-primary mb-4">About me</h2>
+      <p class="mb-4">Jez has been described as "An indivual with huge potential if properly applied" <em>Miss Dunham, Triple Science Teacher</em>. <br>Graduating with honors from The University of Lincoln. I'm now applying myself to life pursuits, be that attaining a high level degree or just making the most of life and living with unlimited potential. <br> I've been into computers from a young age, beginning with my father reading me a desnse Unix manual before I could even read myself. To learning to program to enhance both mine and my fathers gaming experience together. <br> I've obtained a good idea of programming practices and idioms achieved in the workplace by contributing and being a lead developer in many open source projects</p>
+      <a href="jez-horton.com" class="btn btn-primary float-lg-right tm-md-align-center">View portfolio</a>
+    </div>
+  </div>
+</div>
+<div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0">
+  <div class="tm-flex-center p-5 tm-bg-color-primary">
+    <div class="tm-max-w-400 tm-flex-center tm-flex-col">
+      <img src="img/image-04.jpg" alt="Image" class="rounded-circle mb-4">
+      <p class="tm-text-color-white small tm-font-thin mb-0">Nullam eleifend, ipsum eu aliquet fermentum , odio urna dignissim ante, semper maximus libero nisl non nibh.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- 3rd Section -->
+<section class="row tm-section tm-mb-30">
+  <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0 text-center">
+    <img src="img/image-01.jpg" alt="Image" class="img-fluid">
+  </div>
+  <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+    <div class="tm-flex-center p-5">
+      <div class="tm-flex-center tm-flex-col">
+        <h2 class="tm-align-left">Loerm ipsum dolor sit amet</h2>
+        <p></p>
+        <a href="#" class="btn btn-primary">Read More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4th Section -->
+<section class="row tm-section tm-mb-30">
+ <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
+  <div class="tm-flex-center pl-5 pr-5 pt-5 pb-5">
+    <div class="tm-md-flex-center">
+     <h2 class="mb-4 tm-text-color-primary">Nullam auctor ornare finibus</h2>
+     <p>Cras eu dolor lorem. Cras justo mauris, rhoncus in mauris ac, pellentesque pulvinar metus. Suspendisse consectetur consequat diam, ac dignissim mauris gravida vitae. Vestibulum blandit vestibulum mi a viverra.</p>
+     <p class="mb-4">Fusce porta lectus vel elit condimentum porttitor. Maecenas at quam congue, sollicitudin risus quis, ultricies enim. Vivamus sodales, tellus ac quismod dignissim, metus ligula porttitor enim.</p>
+     <p class="mb-4">Sed fermentum odio mollis libero iaculis ultrices. Mauris et nibh mi. Nullam vel sapien dolor. Vestibulum ipsum quam, aliquet ac pharetra in, suscipit eu risus. Etiam rutrum eros ultrices, consectetur felis ultrices, vehicula purus.</p>
+     <a href="#" class="btn btn-primary float-lg-right tm-md-align-center">Read More</a>
+   </div>
+ </div>
+</div>
+<div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 text-xl-right text-md-center text-center mt-5 mt-lg-0 pr-lg-0">
+ <img src="img/image-02.jpg" alt="Image" class="img-fluid">
+</div>
+</section>
+
+<!-- Footer -->
+<div class="row">
+  <div class="col-lg-12">
+    <p class="text-center small tm-copyright-text mb-0">Copyright &copy; <span class="tm-current-year">2020</span> Chimera Code | Jez Horton</p>
+  </div>
+</div>
+</div>
+<!-- load JS -->
+<script src="js/jquery-3.2.1.slim.min.js"></script>         <!-- https://jquery.com/ -->
+<script>
+
+  /* DOM is ready
+  ------------------------------------------------*/
+  $(function(){
+
+    if(renderPage) {
+      $('body').addClass('loaded');
+    }
+
+    $('.tm-current-year').text(new Date().getFullYear());  // Update year in copyright
+  });
+
+</script>
+
+</body>
 </html>
